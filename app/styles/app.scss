@@ -11,5 +11,11 @@
 
   .feature-content {
     height: 100vh;
+    position: relative;
+
+    .about-link {
+      position: absolute;
+      bottom: 0;
+    }
   }
 }
