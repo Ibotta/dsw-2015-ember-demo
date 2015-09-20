@@ -1,5 +1,6 @@
 export default {
-  'application': {
-    'headline': 'Welcome to Ember'
+  'index': {
+    'headline': 'Frozen Bananas!',
+    'subTitle': 'Coming Soon'
   }
 };

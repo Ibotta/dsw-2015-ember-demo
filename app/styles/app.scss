@@ -1,2 +1,15 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
+
+
+.home-feature {
+  background-size: cover;
+  overflow: hidden;
+  padding: 20px;
+  width: 100%;
+  background: url("http://orig09.deviantart.net/4dac/f/2011/135/f/7/ad_banana_stand_by_notdavejustice-d3gfmxm.png") no-repeat center top;
+
+  .feature-content {
+    height: 100vh;
+  }
+}
