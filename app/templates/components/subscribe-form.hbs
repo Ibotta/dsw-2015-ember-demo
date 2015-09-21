@@ -1,0 +1,27 @@
+{{#md-card title=title}}
+  {{#if saved}}
+
+    {{#md-card-content}}
+      {{t 'subscribe.successMessage' email=model.email}}
+    {{/md-card-content}}
+
+  {{else}}
+
+    {{#md-card-content}}
+      {{md-input value=model.email label=(t 'subscribe.email.label') type='email'}}
+      {{md-check checked=model.marketing name=(t 'subscribe.marketing.label')}}
+
+      {{#if saving}}
+        {{md-loader}}
+      {{/if}}
+
+    {{/md-card-content}}
+
+    {{#md-card-action}}
+      <button {{action 'subscribe'}}>
+        {{t 'subscribe.submit'}}
+      </button>
+    {{/md-card-action}}
+
+  {{/if}}
+{{/md-card}}

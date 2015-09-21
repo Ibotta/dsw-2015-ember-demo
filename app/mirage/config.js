@@ -36,6 +36,7 @@ export default function() {
     this.post('/contacts');
     this.post('/contacts', 'user'); // specify the type of resource to be created
   */
+  this.post('/emailSubscriptions', 'email-subscriptions');
 
   /*
     PUT shorthands

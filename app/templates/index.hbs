@@ -1,11 +1,16 @@
 <div class="home-feature">
-  <div class="feature-content">
-    <h1>{{t 'index.headline'}}</h1>
-    <h3>{{t 'index.subTitle'}}</h3>
-    <div class="about-link">
-      {{#link-to 'about'}}
-        <img src="/images/banana_grabber.png">
-      {{/link-to}}
+  <div class="feature-content row">
+    <div class="col m6">
+      <h1>{{t 'index.headline'}}</h1>
+      <h3>{{t 'index.subTitle'}}</h3>
+      <div class="about-link">
+        {{#link-to 'about'}}
+          <img src="/images/banana_grabber.png">
+        {{/link-to}}
+      </div>
+    </div>
+    <div class="subscribe-container col m6">
+      {{subscribe-form model=model}}
     </div>
   </div>
 </div>
