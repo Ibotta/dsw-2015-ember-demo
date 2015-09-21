@@ -1,13 +1,14 @@
 <div class="container">
   {{#md-card
-     title=(t 'about.title')
+     title=model.lastObject.name
      class="teal"
      titleClass="white-text"
      bodyClass="white-text"
      id="address-card"}}
     {{#md-card-content class="white-text"}}
-      <p>{{t 'about.number'}}</p>
-      <p>{{t 'about.street'}}</p>
+      <p>{{model.lastObject.street1}}</p>
+      <p>{{model.lastObject.street2}}</p>
+      <p>{{model.lastObject.city}}, {{model.lastObject.state}} {{model.lastObject.zip}}</p>
     {{/md-card-content}}
   {{/md-card}}
 </div>
