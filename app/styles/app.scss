@@ -1,7 +1,6 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
 
-
 .home-feature {
   background-size: cover;
   overflow: hidden;
@@ -20,10 +19,13 @@
   }
 }
 
-
 .error-page {
   text-align: center;
   .shrug-guy {
     font-size: 5em;
   }
+}
+
+.loading-page {
+  padding: 50px;
 }
